@@ -1,29 +1,32 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>English classes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 <body>
-
 <header>
-
+    <button class="translate" id="en" onclick="changeLang(en);"><img src="eng.jpg" height="30" width="40"/></button>
+    <button class="translate" id="ru" onclick="changeLang(ru);"><img src="rus.png" height="30" width="40"/></button>
     <div class="container">
 
-        <h1>English classes</h1>
-        <h2>Language will change your life!</h2>
-        <a class="btn">Register</a>
+        <h1 id="header-lang">English classes</h1>
+        <h2 id="header2-lang">Language will change your life!</h2>
+        <a id="btn-lang" class="btn">Register</a>
         <div class="submenu">
-            <a href="https://forms.gle/BeEqSU5uSxfEy1Pw9">Application</a>
-            <a href="https://www.instagram.com/native.eng.extra_oz/">Instagram</a>
+            <a id="application" href="https://forms.gle/BeEqSU5uSxfEy1Pw9">Application</a>
+            <a  href="https://www.instagram.com/native.eng.extra_oz/">Instagram</a>
 
         </div>
         <div class="logo">
             <img  class="img-circle" src="picture.png" height="277" width="271"/>
-            <p>Hi, my name is Joshua, my wife and I decided to open English courses to help people with this significant language!
+            <p id="about">Hi, my name is Joshua, my wife and I decided to open English courses to help people with this significant language!
                 so follow the link and register.
                 The places are limited.
             </p>
@@ -37,23 +40,24 @@
     <div class="container">
         <div class="feature">
             <img src="https://www.sololearn.com/uploads/img_blue_pin.png" alt=""/>
-            <p>Orekhovo-Zuyevo</p>
+            <p id="geo">We are in Orekhovo-Zuyevo</p>
         </div>
         <div class="feature">
             <img src="https://www.sololearn.com/uploads/img_blue_chart.png" alt=""/>
-            <p>We have 17 years of experience in teaching English.</p>
+            <p id="eng-age">We have 17 years of experience in teaching English.</p>
         </div>
         <div class="feature">
             <img src="https://www.sololearn.com/uploads/img_blue_msg.png" alt=""/>
-            <p>We ready and want to help people to know language better!</p>
+            <p id="ps">We ready and want to help people to know language better!</p>
         </div>
     </div>
 </section>
 
-<section class="quote">
+<section class="quote" >
     <blockquote class="container">
-        <p>"You can never understand one language until you understand at least two!"</p>
-<!--        <cite>Satisfied Customer-->
+       <p ><p id="phrase">"You can never understand one language until you understand at least two!"</p>
+        </p>
+
         </cite>
     </blockquote>
 </section>
